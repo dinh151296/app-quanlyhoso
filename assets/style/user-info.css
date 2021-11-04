@@ -1,0 +1,124 @@
+/* ========= info-user-style ========= */
+
+.user-page {
+    padding-top: 24px;
+}
+
+.user__form {
+   padding-bottom: 50px;
+}
+
+.form__top {
+    gap: 20px;
+    align-items: stretch;
+}
+
+.main__form {
+    flex: 1;
+}
+
+.user__avatar {
+    max-width: 366px;
+    width: 32%;
+    min-width: 260px; 
+    border: 1px solid #C0C1C4;
+    border-radius: 3px;
+    padding: 50px 0px 80px;
+}
+
+.user__avatar > h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user__img {
+    position: relative;
+}
+
+.user__img > img {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.user__img button {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #EAEAEA;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.user__img button > img {
+    width: 12.8px
+}
+
+.form-group label {
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.form-control {
+    padding: 7px 12px;
+    font-size: 14px;
+    color:#4E4E4E;
+    font-weight: 400;
+}
+
+.form-row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.form-row>.col, .form-row>[class*=col-] {
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.main__form .form-group:last-of-type {
+    margin-bottom: 0px;
+}
+
+.form__save  {
+    margin-top: 50px;
+}
+
+.form__save button {
+    min-width: 138px;
+    margin: 0px 15px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    transition: 0.2s;
+    min-height: 40px;
+}
+
+.form__save button:hover {
+    opacity: 0.7;
+}
+
+.form__save button:first-child {
+    background-color: #DDDDDD;
+    color: var(--text-color);
+}
+
+.form__save button:last-child {
+    background-color: var(--btn-primary-ct);
+    color: #fff;
+}

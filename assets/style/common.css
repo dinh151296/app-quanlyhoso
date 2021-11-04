@@ -397,8 +397,37 @@ aside {
 }
 /* ====== Login-style ====== */
 
-/* ========= info-user-style ========= */
-/* ========= info-user-style ========= */
+.page__title {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.page__title span {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--title-color);
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.page__title span::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 104%;
+    left: 0;
+    height: 2px;
+    background-color: var(--title-color);
+}
+
+.wrap__content-page {
+    border-radius: 3px;
+    margin-top: 22px;
+    background-color: #fff;
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #EAEAEA;
+}
 
 /* ========= Change-password-style ========= */
 /* ========= Change-password-style ========= */
