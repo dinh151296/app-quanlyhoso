@@ -1,0 +1,30 @@
+/* ========= Change-password-style ========= */
+
+.change-pass__page {
+    padding-top: 26px;
+}
+
+.change-pass__form {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.change-pass__form  form {
+    max-width: 615px;
+    margin: 0 auto;
+}
+
+.change-pass__form .form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0px;
+}
+
+.form-group label span {
+    color: var(--btn-danger-ct) !important;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}

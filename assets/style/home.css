@@ -91,49 +91,15 @@
     background-color: #2DCC70;
 }
 
-.info__list > h3 {
-    font-size: 18px;
-    color: var(--title-color);
-    font-weight: 500;
-    margin-bottom: 24px;
-}
-
-.info__list table {
-    border: 1px solid #EAEAEA;
-    background-color: #fff;
-}
-
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: #EEF0F2;
-}
-
-.info__list  .table thead th {
-    border-color: #CCCCCC;
-    font-weight: 500;
-    position: relative;
-}
-
-.info__list  .table thead th img {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20%;
-    width: 9px;
-}
-
 .info__list  .table thead th:nth-child(2),
 .info__list  .table  td:nth-child(2) {
     width: 18%;
 }
 
-.table thead th, .table  td {
-    vertical-align: middle;
+.info__list table {
+    border: 1px solid #EAEAEA;
 }
 
-.info__list  .table th, 
-.info__list  .table td {
-    border-top: none;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--text-color);
+.info__list .table thead th {
+    border-color: #CCCCCC;
 }

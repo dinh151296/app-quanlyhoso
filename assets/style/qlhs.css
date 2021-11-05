@@ -1,0 +1,34 @@
+/* quản lý hồ sơ style */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.rowqlds-ct {
+    position: relative;
+}
+
+.rowqlds-ct .line {
+    position: absolute;
+    font-size: 16px;
+    color: var(--text-color);
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+}
+
+.form__save {
+    margin-top: 10px;
+    padding-top: 30px;
+    border-top: 1px solid #C0C1C4;
+}
+
+.qlds__list {
+    margin-top: 35px;  
+    padding-top: 15px;
+    overflow-x: auto;
+}
+
+.qlds__list  table {
+    overflow-x: auto;
+    max-width: fit-content;
+}

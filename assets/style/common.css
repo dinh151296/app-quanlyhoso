@@ -200,23 +200,56 @@ aside {
     width: 100%;
 }
 
-.aside__menu li a {
+.aside__menu > li {
+    position: relative;
+}
+
+.aside__menu > li .aside__menu-sub {
+    background-color: #ECF7FE;
+    transition: height 0.3s ease;
+    display: none;
+}
+
+.aside__menu > li.is__open .aside__menu-sub {
+   display: block;
+}
+
+.aside__menu-sub li:first-child {
+    padding-top: 5px;
+}
+.aside__menu-sub li:last-child {
+    padding-bottom: 5px;
+}
+
+.aside__menu-sub li a {
+    display: block;
+    font-weight: 400;
+    padding: 8.5px 15px;
+    font-size: 14px;
+    color: var(--text-color-second);
+    transition: 0.2s;
+}
+
+.aside__menu-sub li a.is__active {
+    font-weight: 500;
+}
+
+.aside__menu > li > a {
     display: flex;
     align-items: center;
-    padding: 8.5px 15px;
     font-weight: 400;
-
+    padding: 8.5px 15px;
     font-size: 14px;
     color: var(--text-color-second);
 }
 
-.aside__menu li a.is__active {
+.aside__menu > li > a.is__active {
     background-color: #359AE1;
     font-weight: 500;
     color: #fff;
 }
 
-.aside__menu li a.is__active svg {
+.aside__menu > li > a.is__active svg {
     fill: #fff;
 }
 
@@ -226,7 +259,7 @@ aside {
     align-items: center;
 }
 
-.aside__menu li a svg {
+.aside__menu > li > a > svg {
     max-width: 20px;
     width: auto;
     transition: 0.2s;
@@ -247,6 +280,7 @@ aside {
 
 .page-content {
     flex: 1;
+    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -429,5 +463,108 @@ aside {
     border: 1px solid #EAEAEA;
 }
 
-/* ========= Change-password-style ========= */
-/* ========= Change-password-style ========= */
+.form__save  {
+    margin-top: 50px;
+}
+
+.btn-ct {
+    min-width: 138px;
+    margin: 0px 15px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    transition: 0.2s;
+    min-height: 40px;
+    color: #fff;
+}
+
+.btn-ct:hover {
+    opacity: 0.7;
+}
+
+.btn-default-ct {
+    background-color: #DDDDDD;
+    color: var(--text-color);
+}
+
+.btn-primary-ct {
+    background-color: var(--btn-primary-ct);
+}
+
+.btn-danger-ct {
+    background-color: var(--btn-danger-ct);
+}
+
+.btn-success-ct {
+    background-color: var(--btn--success-ct);
+}
+
+.form-row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.form-row>.col, .form-row>[class*=col-] {
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+
+.form-control {
+    padding: 9px 12px;
+    font-size: 14px;
+    color:#4E4E4E;
+    font-weight: 400;
+    max-height: 40px;
+}
+
+.custom-select {
+    background: #fff url(../image/down02.png) no-repeat right 11.5px center;
+    background-size: 11.5px;
+    font-size: 14px;
+    color:#4E4E4E;
+    font-weight: 400;
+    height: 40px;
+}
+
+/* table-common style */
+.wrap-table > h3 {
+    font-size: 18px;
+    color: var(--title-color);
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.wrap-table table {
+    background-color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #EEF0F2;
+}
+
+.wrap-table .table thead th {
+    font-weight: 500;
+    position: relative;
+}
+
+.wrap-table .table thead th img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20%;
+    width: 9px;
+}
+
+.wrap-table .table th, 
+.wrap-table .table td {
+    border-top: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.table thead th, .table  td {
+    vertical-align: middle;
+}
+/* table-common style */
