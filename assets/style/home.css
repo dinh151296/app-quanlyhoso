@@ -4,11 +4,11 @@
     padding-top: 37px;
     padding-bottom: 45px;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: space-between;
 }
 
 .file__item {
-    flex: 1;
+    width: calc(100%/2 - 15px);
     border-radius: 3px;
     border: 1px solid #EAEAEA;
     background-color: #fff;
@@ -17,7 +17,6 @@
     display: flex;
     align-items: flex-start;
     position: relative;
-    gap: 10%;
 }
 
 .file__img {
@@ -98,8 +97,41 @@
 
 .info__list table {
     border: 1px solid #EAEAEA;
+    min-width: 1200px;
+    overflow-x: auto;
 }
 
 .info__list .table thead th {
     border-color: #CCCCCC;
+}
+
+@media only screen and (max-width: 1200px) {
+    .home__files {
+        overflow-x: auto;
+        padding: 20px 0px;
+    }
+    .file__item {
+        min-width: 470px;
+        overflow-x: auto;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: calc(20px);
+    }
+    .file__item:last-child {
+        margin-bottom: 0px;
+    }
+    .file__img {
+        max-width: 90px;
+        margin-right: 20px;
+    }
+    
+    .home__files::-webkit-scrollbar {
+        background-color: #EBEBEB;
+        height: 8px;
+    }
+
+    .home__files::-webkit-scrollbar-thumb {
+        background-color: #C4C4C4;
+        border-radius: 10px;
+    }
 }

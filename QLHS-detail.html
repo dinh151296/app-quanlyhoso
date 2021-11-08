@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QLHS-danh sách hồ sơ</title>
+    <title>QLHS - detail</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- bootstrap -->
@@ -54,11 +54,11 @@
         </div>
     </header>
     <main>
-        <div class="wrap-page d-flex align-items-start">
+        <div class="wrap-page d-flex">
             <aside>
                 <ul class="aside__menu">
                     <li>
-                        <a  class="is__active" href="index.html">
+                        <a  href="index.html">
                            <div class="aside__menu-icon">
                                 <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.63627 1.06368C8.4675 0.894955 8.23862 0.800171 7.99998 0.800171C7.76133 0.800171 7.53245 0.894955 7.36368 1.06368L1.06368 7.36368C0.899733 7.53342 0.809019 7.76076 0.811069 7.99674C0.81312 8.23272 0.907772 8.45845 1.07464 8.62532C1.24151 8.79218 1.46724 8.88684 1.70321 8.88889C1.93919 8.89094 2.16653 8.80022 2.33628 8.63628L2.59998 8.37258V14.3C2.59998 14.5387 2.6948 14.7676 2.86358 14.9364C3.03236 15.1052 3.26128 15.2 3.49998 15.2H5.29998C5.53867 15.2 5.76759 15.1052 5.93637 14.9364C6.10515 14.7676 6.19998 14.5387 6.19998 14.3V12.5C6.19998 12.2613 6.2948 12.0324 6.46358 11.8636C6.63236 11.6948 6.86128 11.6 7.09998 11.6H8.89997C9.13867 11.6 9.36759 11.6948 9.53637 11.8636C9.70515 12.0324 9.79998 12.2613 9.79998 12.5V14.3C9.79998 14.5387 9.8948 14.7676 10.0636 14.9364C10.2324 15.1052 10.4613 15.2 10.7 15.2H12.5C12.7387 15.2 12.9676 15.1052 13.1364 14.9364C13.3052 14.7676 13.4 14.5387 13.4 14.3V8.37258L13.6637 8.63628C13.8334 8.80022 14.0608 8.89094 14.2967 8.88889C14.5327 8.88684 14.7584 8.79218 14.9253 8.62532C15.0922 8.45845 15.1868 8.23272 15.1889 7.99674C15.1909 7.76076 15.1002 7.53342 14.9363 7.36368L8.63627 1.06368Z" />
@@ -68,7 +68,7 @@
                         </a>
                     </li>
                     <li class="is__open">
-                        <a  href="QLHS-danhsach.html">
+                        <a class="is__active"  href="QLHS-danhsach.html">
                             <div class="aside__menu-icon">
                                 <svg width="16" height="13" viewBox="0 0 16 13"  xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.131994 12.4402C0.280787 12.6642 0.531175 12.7994 0.799963 12.7994H12.7994C13.1194 12.7994 13.409 12.609 13.5346 12.3146L15.9345 6.71489C15.987 6.59324 16.0085 6.46042 15.997 6.3284C15.9854 6.19638 15.9411 6.06932 15.8682 5.95867C15.7952 5.84803 15.6959 5.75728 15.5791 5.69462C15.4624 5.63196 15.3318 5.59935 15.1993 5.59974H14.3993V3.19985C14.3993 2.31749 13.6818 1.59993 12.7994 1.59993H7.47565L5.43095 0H1.59993C0.717567 0 0 0.717567 0 1.59993V11.9994H0.00559971C0.00381669 12.1556 0.0477534 12.3088 0.131994 12.4402ZM12.7994 3.19985V5.59974H3.19985C2.87987 5.59974 2.59028 5.79013 2.46469 6.08452L1.59993 8.10282V3.19985H12.7994Z" />
@@ -88,14 +88,14 @@
                                 </a>
                             </li>
                             <li>
-                                <a  href="QLHS-themhoso-ctrinh.html">
+                                <a  href="QLHS-themhoso.html">
                                     Thêm hồ sơ
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="index.html">
+                        <a href="report-page.html">
                             <div class="aside__menu-icon">
                                 <svg width="16" height="18" viewBox="0 0 16 18"  xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14.625 18H1.125C0.820314 18 0.556642 17.8916 0.333985 17.6748C0.111328 17.458 0 17.1914 0 16.875V1.14258C0 0.826172 0.111328 0.55957 0.333985 0.342773C0.556642 0.125977 0.820314 0.0175781 1.125 0.0175781H9.00002V6.20508C9.00002 6.35742 9.05568 6.48926 9.16701 6.60059C9.27834 6.71191 9.41017 6.76758 9.56252 6.76758H15.75V16.875C15.75 17.1914 15.6416 17.458 15.4248 17.6748C15.208 17.8916 14.9414 18 14.625 18ZM12.9375 14.625H12.375V10.6875C12.375 10.5352 12.3194 10.4033 12.208 10.292C12.0967 10.1807 11.9649 10.125 11.8125 10.125H10.6875C10.5352 10.125 10.4033 10.1807 10.292 10.292C10.1807 10.4033 10.125 10.5352 10.125 10.6875V14.625H9.00002V8.4375C9.00002 8.28516 8.94435 8.15332 8.83302 8.04199C8.7217 7.93066 8.58986 7.875 8.43752 7.875H7.31251C7.16017 7.875 7.02833 7.93066 6.91701 8.04199C6.80568 8.15332 6.75001 8.28516 6.75001 8.4375V14.625H5.62501V11.8125C5.62501 11.6602 5.56935 11.5283 5.45802 11.417C5.34669 11.3057 5.21485 11.25 5.06251 11.25H3.93751C3.78516 11.25 3.65333 11.3057 3.542 11.417C3.43067 11.5283 3.37501 11.6602 3.37501 11.8125V14.625H2.81251C2.66016 14.625 2.52833 14.6807 2.417 14.792C2.30567 14.9033 2.25 15.0352 2.25 15.1875C2.25 15.3398 2.30567 15.4717 2.417 15.583C2.52833 15.6943 2.66016 15.75 2.81251 15.75H12.9375C13.1016 15.75 13.2364 15.6943 13.3418 15.583C13.4473 15.4717 13.5 15.3398 13.5 15.1875C13.5 15.0352 13.4444 14.9033 13.333 14.792C13.2217 14.6807 13.0899 14.625 12.9375 14.625ZM10.125 0C10.4297 0 10.6875 0.105469 10.8985 0.316406L15.416 4.83398C15.6387 5.05664 15.75 5.32617 15.75 5.64258H10.125V0Z" />
@@ -145,176 +145,239 @@
             <section class="page-content qlds-page">
                 <div class="page__title">
                     <span>
-                        Danh sách hồ sơ
+                        Chi tiết hồ sơ
                     </span>
                  </div>  
                  <div class="wrap__content-page qlhs-form">
-                     <form action="">
-                        <div class="form-row">
-                            <div class="form-group col-12 col-md-6 col-lg-4">
-                                <input class="form-control" type="text" placeholder="Nhập từ khóa">
-                            </div>
-                            <div class="form-group col-12 col-md-6 col-lg-4">
-                                <select class="custom-select">
-                                    <option selected>Địa phương</option>
-                                    <option value="1">Phòng Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ Công an Thành phố Hà Nội</option>
-                                    <option value="2">Phòng Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ Công an Thành phố Hồ Chí Minh</option>
-                                    <option value="3">Phòng Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ Công an Thành phố Hải Phòng</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-12 col-md-6 col-lg-4">
-                                <select class="custom-select">
-                                    <option selected>Loại hồ sơ</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-12 col-md-6 col-lg-4">
-                                <select class="custom-select">
-                                    <option selected>Loại công trình</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-12 col-md-6 col-lg-4">
-                                <select class="custom-select">
-                                    <option selected>Trạng thái hồ sơ</option>
-                                    <option value="1">Hồ sơ mới</option>
-                                    <option value="2">Đang xử lý</option>
-                                    <option value="3">Hoàn thành</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-12 col-md-6 col-lg-4 mb-0">
-                               <div class="form-row rowqlds-ct">
-                                   <div class="form-group col-lg-6">
+                    <form action="">
+                        <section class="info__project">
+                            <h4>Thông tin công trình, dự án</h4>
+                                <div class="form-row align-items-end">
+                                    <div class="form-group col-12 col-lg-9">
+                                        <label for="name-project">Tên dự án, công trình, phương tiện</label>
+                                        <input id="name-project" type="text" class="form-control" placeholder="Tên dự án, công trình, phương tiện">
+                                    </div>
+                                    <div class="form-group col-12 col-lg-3">
+                                        <label for="project-status">Trạng thái hồ sơ</label>
                                         <select class="custom-select">
-                                            <option selected>01/01/2021</option>
-                                            <option value="1">01/01/2021</option>
-                                            <option value="2">01/01/2021</option>
-                                            <option value="3">01/01/2021</option>
-                                        </select>
-                                   </div>
-                                   <span class="line">-</span>
-                                   <div class="form-group col-lg-6">
-                                        <select class="custom-select">
-                                            <option selected>01/01/2021</option>
-                                            <option value="1">01/01/2021</option>
-                                            <option value="2">01/01/2021</option>
-                                            <option value="3">01/01/2021</option>
+                                            <option selected>Hồ sơ mới</option>
+                                            <option value="1">Đang xử lý</option>
+                                            <option value="2">Hoàn thành</option>
                                         </select>
                                     </div>
-                               </div>
+                                    <div class="form-group col-12 col-lg-6">
+                                        <label for="">Chủ đầu tư</label>
+                                        <select class="custom-select">
+                                            <option selected>Tên chủ đầu tư dự án, công trình, phương tiện</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12 col-lg-2">
+                                        <label for="">Địa điểm xây dựng <span>*</span></label>
+                                        <select class="custom-select">
+                                            <option selected>Hà Nội</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12 col-lg-2">
+                                        <label for=""></label>
+                                        <select class="custom-select">
+                                            <option selected>Quận Ba Đình</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12 col-lg-2">
+                                        <label for=""></label>
+                                        <select class="custom-select">
+                                            <option selected>Phường Cống Vị</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12 col-lg-4">
+                                        <label for="">Nhóm dự án</label>
+                                        <select class="custom-select">
+                                            <option selected>Nhóm A</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12 col-lg-4">
+                                        <label for="">Loại hồ sơ</label>
+                                        <select class="custom-select">
+                                            <option selected>Trụ sở cơ quan hành chính các cấp, nhà làm việc của</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12 col-lg-4">
+                                        <label for="">Loại công trình</label>
+                                        <select class="custom-select">
+                                            <option selected>Cải tạo công trình, hoán cải phương tiện giao thông cơ gi</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        </section>   
+                        <section class="info__project">
+                            <h4>Thông tin tiếp nhận hồ sơ</h4>
+                                <div class="form-row">
+                                    <div class="form-group  col-lg-3">
+                                        <label for="">Số phiếu tiếp nhận</label>
+                                        <input class="form-control" type="text" placeholder="SPTN1357">
+                                    </div>
+                                    <div class="form-group  col-lg-3">
+                                        <label for="">Hình thức tiếp nhận</label>
+                                        <select class="custom-select">
+                                            <option selected>Trực tiếp</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group  col-lg-3">
+                                        <label for="">Thời gian tiếp nhận</label>
+                                        <input class="form-control" type="number" placeholder="01/01/2021">
+                                    </div>
+                                    <div class="form-group  col-lg-3">
+                                        <label for="">Cán bộ tiếp nhận</label>
+                                        <input class="form-control" type="text" placeholder="Trần Việt Long">
+                                    </div>
+                                    <div class="form-group  col-lg-3">
+                                        <label for="">Loại văn bản trả lời</label>
+                                        <select class="custom-select">
+                                            <option selected>Chọn loại văn bản</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group  col-lg-3">
+                                        <label for="">Số văn bản trả lời</label>
+                                        <input class="form-control" type="text" placeholder="-">
+                                    </div>
+                                    <div class="form-group  col-lg-3">
+                                        <label for="">Ngày hẹn trả kết quả</label>
+                                        <input class="form-control" type="number" placeholder="01/01/2021">
+                                    </div>
+                                    <div class="form-group  col-lg-3">
+                                        <label for="">Ngày trả kết quả</label>
+                                        <input class="form-control" type="number" placeholder="01/01/2021">
+                                    </div>
+                                    <div class="form-group  col-lg-3">
+                                        <label for="">Kết quả <span>*</span></label>
+                                        <select class="custom-select">
+                                            <option selected>Đạt</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group  col-lg-3">
+                                        <label for="">Đơn vị xử lý hồ sơ <span>*</span></label>
+                                        <select class="custom-select">
+                                            <option selected>C07</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group  col-lg-3">
+                                        <label for="">Đơn vị quản lý hồ sơ <span>*</span></label>
+                                        <select class="custom-select">
+                                            <option selected>PC07 Hà Nội</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group  col-lg-3">
+                                        <label for="">Thời gian dự kiến tổ chức kiểm tra</label>
+                                        <input class="form-control" type="number" placeholder="01/01/2021">
+                                    </div>
+                             </div>
+                        </section> 
+                        <section class="file__attach wrap-table">
+                            <div class="form-group">
+                                <label >File đính kèm <span>*</span></label>
                             </div>
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Loại file 01</td>
+                                      <td>Kết quả thẩm duyệt hồ sơ dự án, công trình.pdf</td>
+                                      <td>
+                                        <div class="table-action d-flex align-items-center justify-content-center">
+                                            <a href="QLHS-detail.html" class="edit" download>
+                                                <img src="assets/image/download.png" alt="">
+                                            </a>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="table-action d-flex align-items-center justify-content-center">
+                                            <a href="QLHS-detail.html" class="deleted" >
+                                                <img src="assets/image/delete.svg" alt="">
+                                            </a>
+                                        </div>
+                                      </td>
+                                      <td>
+                                          <div class="table-input d-flex align-items-center justify-content-end">
+                                              <!-- <input type="file"  placeholder="Chọn file"> -->
+                                              <button class="btn btn-ct btn-primary-ct">Chọn file</button>
+                                          </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">2</th>
+                                      <td>Loại file 02</td>
+                                      <td>Kết quả thẩm duyệt hồ sơ dự án, công trình.pdf</td>
+                                      <td>
+                                        <div class="table-action d-flex align-items-center justify-content-center">
+                                            <a href="QLHS-detail.html" class="edit" download>
+                                                <img src="assets/image/download.png" alt="">
+                                            </a>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="table-action d-flex align-items-center justify-content-center">
+                                            <a href="QLHS-detail.html" class="deleted" >
+                                                <img src="assets/image/delete.svg" alt="">
+                                            </a>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="table-input d-flex align-items-center justify-content-end">
+                                            <!-- <input type="file"   placeholder="Chọn file"> -->
+                                            <button class="btn btn-ct btn-primary-ct">Chọn file</button>
+                                        </div>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="add__row d-flex float-right">
+                                                <button class="btn btn-ct btn-back-bg">
+                                                    <img src="assets/image/w_plus12.png" alt="">
+                                                    Thêm dòng
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                        <div class="form__save pb-3 border-0">
+                            <button class="btn btn-ct btn-back-ct btn-default-ct" type="">
+                                <img src="assets/image/pre.svg" alt="">
+                                Quay lại
+                            </button>
+                            <button class="btn btn-ct btn-primary-ct" type="submit">Lưu thay đổi</button>
+                            <button class="btn btn-ct btn-success-ct print d-flex align-items-center" type="">
+                                <img src="assets/image/printer.png" alt="">
+                                In phiếu tiếp nhận
+                            </button>
                         </div>
-                        <div class="form__save d-flex align-items-center justify-content-center">
-                            <button class="btn btn-ct btn-default-ct" type="reset">Xóa</button>
-                            <button class="btn btn-ct btn-primary-ct" type="submit">Tìm kiếm</button>
-                            <button class="btn btn-ct btn-danger-ct" type="">Export to PDF</button>
-                            <button class="btn btn-ct btn-success-ct" type="submit">Export to Excel</button>
-                        </div>
-                     </form>
+                    </form>
                  </div> 
-                 <div class="wrap-table qlds__list">
-                    <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th scope="col">STT</th>
-                            <th scope="col">Công trình</th>
-                            <th scope="col">Chủ đầu tư</th>
-                            <th scope="col">Địa điểm</th>
-                            <th scope="col">Loại công trình</th>
-                            <th scope="col">Loại hồ sơ</th>
-                            <th scope="col">Hình thức tiếp nhận</th>
-                            <th scope="col">Thời gian tiếp nhận</th>
-                            <th scope="col">Ngày hẹn trả kết quả</th>
-                            <th scope="col">Loại văn bản trả lời</th>
-                            <th scope="col">Số văn bản trả lời</th>
-                            <th scope="col">Ngày văn bản trả lời</th>
-                            <th scope="col">File đính kèmả</th>
-                            <th scope="col">Trạng thái hồ sơ</th>
-                            <th scope="col">Hành động</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Tên dự án, công trình, phương tiện</td>
-                            <td>Tên chủ đầu tư dự án, công trình, phương tiện</td>
-                            <td>Địa điểm xây dựng dự án, công trình, phương tiện</td>
-                            <td>Trụ sở cơ quan hành chính các cấp, nhà làm việc của các doanh nghiệp, tổ chức chính trị, xã hội</td>
-                            <td>Thẩm duyệt cải tạo công trình, hoán cải phương tiện giao thông cơ giới</td>
-                            <td>Trực tiếp</td>
-                            <td>01/01/2021</td>
-                            <td>01/01/2021</td>
-                            <td>Công văn</td>
-                            <td>VBTL103641</td>
-                            <td>01/01/2021</td>
-                            <td>
-                                <a href="" download>
-                                    Tải về xem
-                                </a>
-                            </td>
-                            <td>
-                                <select class="custom-select" >
-                                    <option selected>Admin...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </td>
-                            <td>
-                                <div class="table-action d-flex align-items-center">
-                                    <a href="" class="edit">
-                                        <img src="assets/image/edit-two.svg" alt="">
-                                    </a>
-                                    <a href="" class="deleted">
-                                        <img src="assets/image/delete.svg" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Tên dự án, công trình, phương tiện</td>
-                            <td>Tên chủ đầu tư dự án, công trình, phương tiện</td>
-                            <td>Địa điểm xây dựng dự án, công trình, phương tiện</td>
-                            <td>Trụ sở cơ quan hành chính các cấp, nhà làm việc của các doanh nghiệp, tổ chức chính trị, xã hội</td>
-                            <td>Thẩm duyệt cải tạo công trình, hoán cải phương tiện giao thông cơ giới</td>
-                            <td>Trực tiếp</td>
-                            <td>01/01/2021</td>
-                            <td>01/01/2021</td>
-                            <td>Công văn</td>
-                            <td>VBTL103641</td>
-                            <td>01/01/2021</td>
-                            <td>
-                                <a href="" download>
-                                    Tải về xem
-                                </a>
-                            </td>
-                            <td>
-                                <select class="custom-select" >
-                                    <option selected>Admin...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </td>
-                            <td>
-                                <div class="table-action d-flex align-items-center">
-                                    <a href="" class="edit">
-                                        <img src="assets/image/edit-two.svg" alt="">
-                                    </a>
-                                    <a href="" class="deleted">
-                                        <img src="assets/image/delete.svg" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                </div>
             </section>
         </div>
     </main>

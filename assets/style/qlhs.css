@@ -30,5 +30,64 @@
 
 .qlds__list  table {
     overflow-x: auto;
-    max-width: fit-content;
+    min-width: 1300px;
+}
+
+.qlds__list::-webkit-scrollbar {
+    background-color: #EBEBEB;
+    height: 8px;
+}
+
+.qlds__list::-webkit-scrollbar-thumb {
+    background-color: #C4C4C4;
+    border-radius: 10px;
+}
+
+.qlds__list  table td select {
+    min-width: 120px;
+    height: 34px;
+}
+
+.qlds__list  table td a {
+    color: #359AE1;
+    text-decoration: underline;
+}
+
+.table thead th, .table td {
+    vertical-align: top;
+}
+
+.table td, .table th {
+    padding: 12px 6px;
+}
+
+.wrap-table .table thead th {
+    white-space: nowrap;
+}
+
+.danhsach-ctrinh-table .table td,
+.danhsach-ctrinh-table .table th {
+    padding: 12px;
+}
+
+.danhsach-ctrinh-table {
+    overflow-x: auto;
+    margin-top: 35px;
+}
+
+.danhsach-ctrinh-table table {
+    min-width: 650px;
+}
+
+.danhsach-ctrinh-table  table td select {
+    min-width: 120px;
+}
+
+.table td a {
+    color: #359AE1;
+    text-decoration: underline;
+}
+
+.table__inner tbody tr:nth-of-type(odd) {
+    background-color: transparent;
 }

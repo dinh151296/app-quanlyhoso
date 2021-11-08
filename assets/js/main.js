@@ -6,9 +6,9 @@ adminElement.addEventListener('click', function () {
 });
 
 // aside-menu-left
-let asideMenuItem = document.querySelectorAll('.aside__menu > li');
-asideMenuItem.forEach(item => {
-    item.addEventListener('click', function (e) {
-        item.classList.add('is__open')
-    })
-});
+// let asideMenuItem = document.querySelectorAll('.aside__menu > li');
+// asideMenuItem.forEach(item => {
+//     item.addEventListener('click', function (e) {
+//         item.classList.add('is__open')
+//     })
+// });

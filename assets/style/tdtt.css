@@ -1,0 +1,132 @@
+/* page tdtt style */
+
+.tdtt__item {
+    padding: 13.5px 20px;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.tdtt__item:last-child {
+    border-bottom: none;
+}
+
+.tdtt__item-title  {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.tdtt__item-title a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.tdtt__item-r {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.tdtt__item-r >p {
+    margin-left: 20px;
+}
+
+.tdtt__item-r >p:first-child {
+    margin-left: 0px;
+}
+
+.tdtt-page__content {
+    padding: 22px 20px;
+}
+
+.tdtt__content > h3.title {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 18px;
+}
+
+.tdtt__location {
+    padding-bottom: 14px;
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 15px;
+}
+
+.tdtt__location > h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-color);
+    padding-right: 20px;
+}
+
+.tdtt__location > span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #888888;
+}
+
+.tdtt__content > p{
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.tdtt__content > figure {
+    margin-bottom: 20px;
+}
+
+.tdtt__content > figure img {
+    max-width: 180px;
+}
+
+.tdtt-form {
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 3px;
+    border: 1px solid #EAEAEA;
+}
+
+.tdtt-form form textarea {
+    width: 100%;
+    height: 220px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.tdtt-form-send {
+    border-top: 1px solid #EAEAEA;
+    padding: 20px;
+}
+
+.tdtt-form-send > img {
+    max-width: 20px;
+}
+
+.btn-tdtt-form {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 7px 30px;
+}
+
+.form-control {
+    max-height: unset;
+}
+
+.form-check > label {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+@media only screen and (max-width: 767px) {
+    .wrap__content-page {
+        overflow-x: auto;
+    }
+    .tdtt__list, .tdtt__content  {
+        min-width: 560px;
+        overflow-x: auto;
+    }
+}

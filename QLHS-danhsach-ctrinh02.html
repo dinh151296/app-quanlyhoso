@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QLHS-danh sách hồ sơ</title>
+    <title>QLHS - danh sách ctrinh</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- bootstrap -->
@@ -88,7 +88,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a  href="QLHS-themhoso.html">
+                                <a  href="QLHS-themhoso-ctrinh.html">
                                     Thêm hồ sơ
                                 </a>
                             </li>
@@ -145,78 +145,55 @@
             <section class="page-content qlds-page">
                 <div class="page__title">
                     <span>
-                        Danh sách hồ sơ
+                        Danh sách công trình
                     </span>
                  </div>  
                  <div class="wrap__content-page qlhs-form">
-                     <form action="">
+                    <form action="">
                         <div class="form-row">
-                            <div class="form-group col-12 col-md-6 col-lg-4">
-                                <input class="form-control" type="text" placeholder="Nhập từ khóa">
+                            <div class="form-group col-12 col-lg-6">
+                                <input id="input-searcht" type="text" class="form-control" placeholder="Nhập từ khóa">
                             </div>
-                            <div class="form-group col-12 col-md-6 col-lg-4">
-                                <select class="custom-select">
-                                    <option selected>Địa phương</option>
-                                    <option value="1">Phòng Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ Công an Thành phố Hà Nội</option>
-                                    <option value="2">Phòng Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ Công an Thành phố Hồ Chí Minh</option>
-                                    <option value="3">Phòng Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ Công an Thành phố Hải Phòng</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-12 col-md-6 col-lg-4">
-                                <select class="custom-select">
-                                    <option selected>Loại hồ sơ</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-12 col-md-6 col-lg-4">
+                            <div class="form-group col-12 col-lg-6">
                                 <select class="custom-select">
                                     <option selected>Loại công trình</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
+                                    <option value="1">Nhà hỗn hợp</option>
+                                    <option value="2">Công trình giáo dục</option>
                                 </select>
                             </div>
-                            <div class="form-group col-12 col-md-6 col-lg-4">
+                            <div class="form-group col-12 col-lg-4">
                                 <select class="custom-select">
-                                    <option selected>Trạng thái hồ sơ</option>
-                                    <option value="1">Hồ sơ mới</option>
-                                    <option value="2">Đang xử lý</option>
-                                    <option value="3">Hoàn thành</option>
+                                    <option selected>Tỉnh/Thành phố</option>
+                                    <option value="1">...</option>
+                                    <option value="2">...</option>
                                 </select>
                             </div>
-                            <div class="form-group col-12 col-md-6 col-lg-4 mb-0">
-                               <div class="form-row rowqlds-ct">
-                                   <div class="form-group col-lg-6">
-                                        <select class="custom-select">
-                                            <option selected>01/01/2021</option>
-                                            <option value="1">01/01/2021</option>
-                                            <option value="2">01/01/2021</option>
-                                            <option value="3">01/01/2021</option>
-                                        </select>
-                                   </div>
-                                   <span class="line">-</span>
-                                   <div class="form-group col-lg-6">
-                                        <select class="custom-select">
-                                            <option selected>01/01/2021</option>
-                                            <option value="1">01/01/2021</option>
-                                            <option value="2">01/01/2021</option>
-                                            <option value="3">01/01/2021</option>
-                                        </select>
-                                    </div>
-                               </div>
+                            <div class="form-group col-12 col-lg-4">
+                                <select class="custom-select">
+                                    <option selected>Quận/Huyện</option>
+                                    <option value="1">...</option>
+                                    <option value="2">...</option>
+                                </select>
                             </div>
-                        </div>
-                        <div class="form__save d-flex align-items-center justify-content-center">
-                            <button class="btn btn-ct btn-default-ct" type="reset">Xóa</button>
+                            <div class="form-group col-12 col-lg-4">
+                                <select class="custom-select">
+                                    <option selected value="">Trạng thái công trình</option>
+                                    <option value="">Chưa thi công</option>
+                                    <option value="">Đang thi công</option>
+                                </select>
+                            </div>
+                        </div>   
+                        <div class="form__save pt-3 border-0 mt-0">
+                            <button class="btn btn-ct btn-default-ct" type="">
+                                Xóa
+                            </button>
                             <button class="btn btn-ct btn-primary-ct" type="submit">Tìm kiếm</button>
                             <button class="btn btn-ct btn-danger-ct" type="">Export to PDF</button>
                             <button class="btn btn-ct btn-success-ct" type="submit">Export to Excel</button>
                         </div>
-                     </form>
+                    </form>
                  </div> 
-                 <div class="wrap-table qlds__list">
+                 <div class="wrap-table danhsach-ctrinh-table table-responsive ">
                     <table class="table table-striped">
                         <thead>
                           <tr>
@@ -224,17 +201,8 @@
                             <th scope="col">Công trình</th>
                             <th scope="col">Chủ đầu tư</th>
                             <th scope="col">Địa điểm</th>
-                            <th scope="col">Loại công<br>trình</th>
-                            <th scope="col">Loại hồ sơ</th>
-                            <th scope="col">Hình thức<br>tiếp nhận</th>
-                            <th scope="col">Thời gian<br>tiếp nhận</th>
-                            <th scope="col">Ngày hẹn<br>trả kết quả</th>
-                            <th scope="col">Loại văn<br>bản trả lời</th>
-                            <th scope="col">Số văn<br>bản trả lời</th>
-                            <th scope="col">Ngày văn<br>bản trả lời</th>
-                            <th scope="col">File<br>đính kèm</th>
-                            <th scope="col">Trạng thái<br>hồ sơ</th>
-                            <th scope="col">Hành động</th>
+                            <th scope="col">Loại công trình</th>
+                            <th scope="col">Trạng thái công trình</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -244,34 +212,96 @@
                             <td>Tên chủ đầu tư dự án, công trình, phương tiện</td>
                             <td>Địa điểm xây dựng dự án, công trình, phương tiện</td>
                             <td>Trụ sở cơ quan hành chính các cấp, nhà làm việc của các doanh nghiệp, tổ chức chính trị, xã hội</td>
-                            <td>Thẩm duyệt cải tạo công trình, hoán cải phương tiện giao thông cơ giới</td>
-                            <td>Trực tiếp</td>
-                            <td>01/01/2021</td>
-                            <td>01/01/2021</td>
-                            <td>Công văn</td>
-                            <td>VBTL103641</td>
-                            <td>01/01/2021</td>
-                            <td>
-                                <a href="" download>
-                                    Tải về xem
-                                </a>
-                            </td>
                             <td>
                                 <select class="custom-select" >
-                                    <option selected>Hồ sơ mới</option>
-                                    <option style="color: #FF9238;" value="1">Đang xử lý</option>
-                                    <option style="color: #1BA466;" value="2">Hoàn thành</option>
+                                    <option selected>Đang thi công</option>
+                                    <option value="1">Chưa thi công</option>
                                 </select>
                             </td>
-                            <td>
-                                <div class="table-action d-flex align-items-center">
-                                    <a href="QLHS-detail.html" class="edit">
-                                        <img src="assets/image/edit-two.svg" alt="">
-                                    </a>
-                                    <a href="" class="deleted">
-                                        <img src="assets/image/delete.svg" alt="">
-                                    </a>
-                                </div>
+                            
+                          </tr>
+                          <tr>
+                            <td colspan="6" class="">
+                                <table class="table table__inner table-bordered mb-0">
+                                    <thead class="">
+                                      <tr>
+                                        <th scope="col">Loại hồ sơ</th>
+                                        <th scope="col">Hình thức<br>tiếp nhận</th>
+                                        <th scope="col">Thời gian<br>tiếp nhận</th>
+                                        <th scope="col">Ngày hẹn<br>trả kết quả</th>
+                                        <th scope="col">Loại văn<br>bản trả lời</th>
+                                        <th scope="col">Số văn<br>bản trả lời</th>
+                                        <th scope="col">Ngày văn<br>bản trả lời</th>
+                                        <th scope="col">File<br>đính kèm</th>
+                                        <th scope="col">Trạng thái<br>hồ sơ</th>
+                                        <th scope="col">Hành động</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Thẩm duyệt cải tạo công trình, hoán cải phương tiện giao thông cơ giới</td>
+                                        <td>Trực tiếp</td>
+                                        <td>01/01/2021</td>
+                                        <td>01/01/2021</td>
+                                        <td>Công văn</td>
+                                        <td>VBTL103641</td>
+                                        <td>01/01/2021</td>
+                                        <td>
+                                            <a href="" download>
+                                                Tải về xem
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <select class="custom-select" >
+                                                <option selected>Hồ sơ mới</option>
+                                                <option style="color: #FF9238;" value="1">Đang xử lý</option>
+                                                <option style="color: #1BA466;" value="2">Hoàn thành</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <div class="table-action d-flex align-items-center">
+                                                <a href="QLHS-detail.html" class="edit">
+                                                    <img src="assets/image/edit-two.svg" alt="">
+                                                </a>
+                                                <a href="" class="deleted">
+                                                    <img src="assets/image/delete.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Thẩm duyệt cải tạo công trình, hoán cải phương tiện giao thông cơ giới</td>
+                                        <td>Trực tiếp</td>
+                                        <td>01/01/2021</td>
+                                        <td>01/01/2021</td>
+                                        <td>Công văn</td>
+                                        <td>VBTL103641</td>
+                                        <td>01/01/2021</td>
+                                        <td>
+                                            <a href="" download>
+                                                Tải về xem
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <select class="custom-select" >
+                                                <option selected>Hồ sơ mới</option>
+                                                <option style="color: #FF9238;" value="1">Đang xử lý</option>
+                                                <option style="color: #1BA466;" value="2">Hoàn thành</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <div class="table-action d-flex align-items-center">
+                                                <a href="QLHS-detail.html" class="edit">
+                                                    <img src="assets/image/edit-two.svg" alt="">
+                                                </a>
+                                                <a href="" class="deleted">
+                                                    <img src="assets/image/delete.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                </table>
                             </td>
                           </tr>
                           <tr>
@@ -280,38 +310,42 @@
                             <td>Tên chủ đầu tư dự án, công trình, phương tiện</td>
                             <td>Địa điểm xây dựng dự án, công trình, phương tiện</td>
                             <td>Trụ sở cơ quan hành chính các cấp, nhà làm việc của các doanh nghiệp, tổ chức chính trị, xã hội</td>
-                            <td>Thẩm duyệt cải tạo công trình, hoán cải phương tiện giao thông cơ giới</td>
-                            <td>Trực tiếp</td>
-                            <td>01/01/2021</td>
-                            <td>01/01/2021</td>
-                            <td>Công văn</td>
-                            <td>VBTL103641</td>
-                            <td>01/01/2021</td>
-                            <td>
-                                <a href="" download>
-                                    Tải về xem
-                                </a>
-                            </td>
                             <td>
                                 <select class="custom-select" >
-                                    <option selected>Hồ sơ mới</option>
-                                    <option style="color: #FF9238;" value="1">Đang xử lý</option>
-                                    <option style="color: #1BA466;" value="2">Hoàn thành</option>
+                                    <option selected>Đang thi công</option>
+                                    <option value="1">Chưa thi công</option>
                                 </select>
                             </td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Tên dự án, công trình, phương tiện</td>
+                            <td>Tên chủ đầu tư dự án, công trình, phương tiện</td>
+                            <td>Địa điểm xây dựng dự án, công trình, phương tiện</td>
+                            <td>Trụ sở cơ quan hành chính các cấp, nhà làm việc của các doanh nghiệp, tổ chức chính trị, xã hội</td>
                             <td>
-                                <div class="table-action d-flex align-items-center">
-                                    <a href="QLHS-detail.html" class="edit">
-                                        <img src="assets/image/edit-two.svg" alt="">
-                                    </a>
-                                    <a href="" class="deleted">
-                                        <img src="assets/image/delete.svg" alt="">
-                                    </a>
-                                </div>
+                                <select class="custom-select" >
+                                    <option selected>Đã thi công xong chưa nghiệm ...</option>
+                                    <option value="1">Chưa thi công</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Tên dự án, công trình, phương tiện</td>
+                            <td>Tên chủ đầu tư dự án, công trình, phương tiện</td>
+                            <td>Địa điểm xây dựng dự án, công trình, phương tiện</td>
+                            <td>Trụ sở cơ quan hành chính các cấp, nhà làm việc của các doanh nghiệp, tổ chức chính trị, xã hội</td>
+                            <td>
+                                <select class="custom-select" >
+                                    <option selected>Đã thi công xong chưa nghiệm ...</option>
+                                    <option value="1">Chưa thi công</option>
+                                </select>
                             </td>
                           </tr>
                         </tbody>
-                    </table>
+                      </table>
                 </div>
 
                 <div class="pagination">
