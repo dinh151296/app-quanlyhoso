@@ -249,6 +249,7 @@ aside {
     right: 12px;
     top: 50%;
     transform: translateY(-50%);
+    color: #fff;
 }
 
 .aside__menu-sub li a.is__active {
@@ -777,6 +778,7 @@ aside {
     max-width: 18px;
     margin-left: 5px;
     margin-right: 0px;
+    margin-top: 2px;
 }
 
 .btn-action {
@@ -838,6 +840,10 @@ aside {
     margin-top: 3px;
     text-decoration: none;
     color: #359AE1;
+}
+
+.table td .action__user a.deleted {
+    color: var(--btn-danger-ct);
 }
 
 /* modal */

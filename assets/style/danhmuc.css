@@ -1,0 +1,22 @@
+/* quản lý danh mục style */
+
+.category-table .table th, .category-table .table td {
+    border-top: 1px solid #EAEAEA;
+}
+
+.category-table .table {
+    border: 1px solid #EAEAEA;
+    border-radius: 3px;
+}
+
+.category-detail-table .table {
+    min-width: 520px;
+}
+
+
+@media only screen and (max-width:767px) {
+    .form__save button {
+        margin-bottom: 15px;
+        margin-left: 0px;
+    }
+}
