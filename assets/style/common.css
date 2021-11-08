@@ -787,7 +787,8 @@ aside {
     border: 1px solid #FF9238;
     border-radius: 3px;
     background-color: #fff;
-    transition: 0.2s
+    transition: 0.2s;
+    min-width: 85px;
 }
 
 .btn-action:hover {
