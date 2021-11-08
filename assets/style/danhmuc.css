@@ -13,6 +13,10 @@
     min-width: 520px;
 }
 
+.wrap-table__cate {
+    margin-top: 30px;
+}
+
 
 @media only screen and (max-width:767px) {
     .form__save button {

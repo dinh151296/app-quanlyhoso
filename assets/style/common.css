@@ -784,7 +784,7 @@ aside {
 .btn-action {
     font-size: 14px;
     font-weight: 400;
-    color: #FF9238;
+    color: #FF9238 !important;
     padding: 4px 15px;
     border: 1px solid #FF9238;
     border-radius: 3px;
@@ -798,7 +798,7 @@ aside {
 }
 
 .btn-action.is__active {
-    color: var(--btn--success-ct);
+    color: var(--btn--success-ct) !important;
     border-color: var(--btn--success-ct);
 }
 

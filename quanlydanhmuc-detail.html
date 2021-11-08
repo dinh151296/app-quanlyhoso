@@ -179,66 +179,76 @@
                         Tỉnh thành
                     </span>
                  </div>  
-                <div class="wrap__content-page wrap-page-qldm">
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <form action="">
-                                <div class="form-group">
-                                    <label for="category-name">Tên danh mục</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form__save mt-4 justify-content-start">
-                                    <button class="btn btn-ct btn-success-ct ml-0">Tìm kiếm</button>
-                                    <button class="btn btn-add btn-ct btn-danger-ct d-flex align-items-center" type="button" data-toggle="modal" data-target="#add-cat">
+              
+                <div class="wrap__content-page  wrap-page-qldm">
+                    <form action="">
+                        <div class="form-row flex-wrap">
+                            <div class="form-group mb-0 col-lg-8">
+                                <select class="custom-select ">
+                                    <option selected>Chọn địa phương</option>
+                                    <option value="1">...</option>
+                                    <option value="2">...</option>
+                                </select>
+                            </div>
+                            <div class="form__save-ct">
+                                <div class="form__save border-top-0 pt-0 mt-0 justify-content-start">
+                                    <button class="btn btn-ct btn-primary-ct" type="submit">Tìm kiếm</button>
+                                    <button class="btn  btn-ct  btn-add btn-danger-ct  d-flex align-items-center" type="button" data-toggle="modal" data-target="#add-cat">
                                         Thêm danh mục 
                                         <img src="assets/image/w_plus12.png" alt="">
                                     </button>
                                 </div>
-                            </form>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="wrap-table category-table category-detail-table">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">STT</th>
-                                        <th scope="col" >Tỉnh Thành</th>
-                                        <th scope="col">Quận Huyện</th>
-                                        <th scope="col">Phường Xã</th>
-                                        <th scope="col">Hành động</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Hà Nội</td>
-                                        <td>Loại công trình </td>
-                                        <td>Loại công trình </td>
-                                        <td>
-                                            <div class="action__user">
-                                                <a class="mr-4" href="">Chỉnh sửa</a>
-                                                <a class="deleted" href="">Xóa</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>TP HCM</td>
-                                        <td>Loại công trình </td>
-                                        <td>Loại công trình </td>
-                                        <td>
-                                            <div class="action__user">
-                                                <a class="mr-4" href="">Chỉnh sửa</a>
-                                                <a class="deleted" href="">Xóa</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div> 
+                <div class="wrap-table table-responsive wrap-table__cate">
+                    <table class="table table-striped table__user">
+                        <thead>
+                        <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col" >Tỉnh Thành</th>
+                            <th scope="col">Quận Huyện</th>
+                            <th scope="col">Phường Xã</th>
+                            <th scope="col">Hành động</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Hà Nội</td>
+                            <td>Loại công trình </td>
+                            <td>Loại công trình </td>
+                            <td>
+                                <div class="table-action d-flex align-items-center">
+                                    <a href="QLHS-detail.html" class="edit">
+                                        <img class="ml-0" src="assets/image/edit-two.svg" alt="">
+                                    </a>
+                                    <a href="" class="deleted mb-1">
+                                        <img src="assets/image/delete.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>TP HCM</td>
+                            <td>Loại công trình </td>
+                            <td>Loại công trình </td>
+                            <td>
+                                <div class="table-action d-flex align-items-center">
+                                    <a href="QLHS-detail.html" class="edit">
+                                        <img class="ml-0" src="assets/image/edit-two.svg" alt="">
+                                    </a>
+                                    <a href="" class="deleted mb-1">
+                                        <img src="assets/image/delete.svg" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </div>
     </main>
